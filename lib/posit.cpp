@@ -21,6 +21,11 @@ Posit::Posit(int nbits, int es) :
 {
 }
 
+Posit::Posit() :
+    Posit(POSIT_ZERO, 0, 0)
+{
+}
+
 bool Posit::isZero() const
 {
     return util_is_zero(mBits);

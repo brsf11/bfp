@@ -12,6 +12,7 @@ private:
 public:
     Posit(POSIT_UTYPE bits, int nbits, int es);
     Posit(int nbits, int es);
+    Posit();
 
     bool isZero() const;                  // check for 0
     bool isNar() const;                   // check for NaR
